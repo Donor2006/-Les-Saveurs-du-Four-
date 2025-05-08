@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #6200ea;
+    --primary-color-light: #9d46ff;
+    --primary-color-dark: #0a00b6;
+    --text-color-light: #333;
+    --text-color-dark: #f5f5f5;
+    --background-light: #f9f9f9;
+    --background-dark: #121212;
+    --card-light: #ffffff;
+    --card-dark: #1e1e1e;
+    --border-light: rgba(0, 0, 0, 0.1);
+    --border-dark: rgba(255, 255, 255, 0.1);
+    --hover-light: rgba(0, 0, 0, 0.05);
+    --hover-dark: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 1%;
+}
+
+.light-theme {
+    --text-color: var(--text-color-light);
+    --background: var(--background-light);
+    --card-bg: var(--card-light);
+    --border-color: var(--border-light);
+    --hover-color: var(--hover-light);
+}
+
+.dark-theme {
+    --text-color: var(--text-color-dark);
+    --background: var(--background-dark);
+    --card-bg: var(--card-dark);
+    --border-color: var(--border-dark);
+    --hover-color: var(--hover-dark);
+}
+
+.navbar {
+    width: 100%;
+    position: fixed; /* Изменено на fixed для закрепления */
+    top: 0;
+    left: 0;
+    background-color: #823819;
+    box-shadow: 0 2px 10px #3C2017;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    align-items: center;
+    justify-content: space-between; /* Разделяет элементы по краям */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Убираем маркеры списка */
+    flex-grow: 1; /* Allow nav-links to take available space */
+    justify-content: center; /* Center the links */
+}
+
+
+.nav-links li {
+    margin: 0 15px; /* Отступы между элементами списка */
+}
+
+.nav-links a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: white; /* Цвет текста */
+    padding: 10px 15px; /* Отступы вокруг текста */
+    border-radius: 35px; /* Закругленные углы */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+.nav-links a:hover {
+    background-color: #C17B56; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+.navbar-image {
+    max-width: 100px; /* Установите максимальную ширину изображения */
+    height: 50%; /* Высота будет автоматически подстраиваться */
+    margin: center; /* Отступы слева и справа */
+}
+
+.image-container {
+width: 100vw; /* Растягиваем контейнер на всю ширину окна */
+overflow: hidden; /* Обрезаем все, что выходит за пределы контейнера */
+position: relative;
+}
+
+.about-us {
+height: 850px; /* Фиксированная высота контейнера с изображением */
+position: relative;
+}
+
+.about-content {
+width: 100%;
+height: 100%;
+}
+
+.about-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover; /* Изображение заполнит контейнер, сохраняя пропорции */
+z-index: -1; /* Отправляем изображение на задний план */
+}
+span {
+    position: absolute;
+    color: #d61010;
+    font-size: 22px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Courier New, monospace;
+}
+.welcome-block {
+    background-color: #C17B56; 
+    color: white;
+    width: 100%;
+    height: 1000%;
+    padding: 350px;
+
+}
+.welcome-block h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-left: -200px;
+}
+.welcome-block p{
+    margin-left: -200px;
+    font-size: 20px;
+}
+.welcome-block h2{
+    margin-left: -200px;
+    margin-top: 100px;
+    
+}
+.cake-image {
+    margin-left: 800px;
+    margin-top: -600px;
+    width: 60%;
+  
+}
