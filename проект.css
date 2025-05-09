@@ -45,7 +45,7 @@ body {
 
 .navbar {
     width: 100%;
-    position: fixed; /* Изменено на fixed для закрепления */
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #823819;
@@ -56,52 +56,52 @@ body {
 
 .navbar-container {
     align-items: center;
-    justify-content: space-between; /* Разделяет элементы по краям */
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера */
-    padding: 0 20px; /* Отступы по бокам */
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    list-style: none; /* Убираем маркеры списка */
-    flex-grow: 1; /* Allow nav-links to take available space */
-    justify-content: center; /* Center the links */
+    list-style: none; 
+    flex-grow: 1; 
+    justify-content: center; 
 }
 
 
 .nav-links li {
-    margin: 0 15px; /* Отступы между элементами списка */
+    margin: 0 15px; 
 }
 
 .nav-links a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: white; /* Цвет текста */
-    padding: 10px 15px; /* Отступы вокруг текста */
-    border-radius: 35px; /* Закругленные углы */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+    text-decoration: none; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 35px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .nav-links a:hover {
-    background-color: #C17B56; /* Цвет фона при наведении */
-    color: #fff; /* Цвет текста при наведении */
+    background-color: #C17B56; 
+    color: #fff; 
 }
 
 .navbar-image {
-    max-width: 100px; /* Установите максимальную ширину изображения */
-    height: 50%; /* Высота будет автоматически подстраиваться */
-    margin: center; /* Отступы слева и справа */
+    max-width: 100px; 
+    height: 50%; 
+    margin: center; 
 }
 
 .image-container {
-width: 100vw; /* Растягиваем контейнер на всю ширину окна */
-overflow: hidden; /* Обрезаем все, что выходит за пределы контейнера */
+width: 100vw; 
+overflow: hidden; 
 position: relative;
 }
 
 .about-us {
-height: 850px; /* Фиксированная высота контейнера с изображением */
+height: 850px; 
 position: relative;
 }
 
